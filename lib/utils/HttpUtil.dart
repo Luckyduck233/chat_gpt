@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:chat_gpt/CompletionRequest.dart';
+import 'package:chat_gpt/entity/CompletionRequest.dart';
 import 'package:dio/dio.dart';
 
 

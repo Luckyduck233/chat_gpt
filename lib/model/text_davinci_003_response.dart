@@ -4,12 +4,12 @@
 
 import 'dart:convert';
 
-Response responseFromJson(String str) => Response.fromJson(json.decode(str));
+ModelDavinci003 responseFromJson(String str) => ModelDavinci003.fromJson(json.decode(str));
 
-String responseToJson(Response data) => json.encode(data.toJson());
+String responseToJson(ModelDavinci003 data) => json.encode(data.toJson());
 
-class Response {
-  Response({
+class ModelDavinci003 {
+  ModelDavinci003({
     required this.id,
     required this.object,
     required this.created,
@@ -25,7 +25,7 @@ class Response {
   List<Choice> choices;
   Usage usage;
 
-  factory Response.fromJson(Map<String, dynamic> json) => Response(
+  factory ModelDavinci003.fromJson(Map<String, dynamic> json) => ModelDavinci003(
     id: json["id"],
     object: json["object"],
     created: json["created"],

@@ -1,0 +1,4 @@
+enum MenuValue{
+  Abc,
+  Def
+}

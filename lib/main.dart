@@ -1,7 +1,8 @@
-import 'package:chat_gpt/chat_message.dart';
+import 'package:chat_gpt/components/chat_message.dart';
+import 'package:chat_gpt/theme/global_theme.dart';
 import 'package:flutter/material.dart';
 
-import 'chat_screen.dart';
+import 'page/chat_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'ChatGPT Demo',
-      theme: ThemeData(
-
-        primarySwatch: Colors.green,
-        useMaterial3: true
-      ),
+      theme: GlobalTheme.lightTheme,
       debugShowCheckedModeBanner: false,
       home: ChatScreen()
     );
